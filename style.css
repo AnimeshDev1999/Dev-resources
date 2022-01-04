@@ -1,0 +1,334 @@
+/*
+-- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 44 / 52 / 62 / 74 / 86 / 98 
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+
+- Letter spacing
+-0.5px
+0.75px
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+-- 02 COLOURS
+
+Primary: #c9e265
+
+- Tints: #d9eb89
+- Shades: #cee567c9
+- Accent:
+- Greys: #555 #333 #888 #767676
+
+-- 05 SHADOWS
+
+box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+-- 06 BORDER RADIUS
+
+Default: 9px
+11px
+
+*/
+
+/***************************************/
+/* GENERAL COMPONENTS */
+/***************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #444;
+  box-sizing: border-box;
+  font-family: "Urbanist", sans-serif;
+}
+
+.heading {
+  color: #444;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.row {
+  width: 30%;
+  height: 0.3rem;
+  background-color: #444;
+  border: none;
+}
+
+.fifty {
+  width: 50%;
+}
+
+.sub-hed {
+  font-size: 3.6rem;
+  font-weight: 700;
+  padding: 2.4rem;
+}
+
+.code-block {
+  background-color: rgba(68, 68, 68, 0.144);
+  border-radius: 4px;
+}
+
+/***************************************/
+/* HEADER */
+/***************************************/
+
+.header {
+  background-color: rgba(0, 0, 0, 0.349);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 4.8rem;
+  border-radius: 4px;
+}
+
+.logo {
+  height: 3.5rem;
+}
+
+.navigation ul {
+  display: flex;
+  gap: 2rem;
+  list-style-type: none;
+}
+
+.navigation a:link,
+.navigation a:visited {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #d9eb89;
+  text-transform: uppercase;
+  transition: 0.3s all ease-in-out;
+}
+
+.navigation a:hover,
+.navigation a:active {
+  color: #999;
+}
+
+.navigation .btn-cta:link,
+.navigation .btn-cta:visited {
+  background-color: #c9e265;
+  color: #333;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.navigation .btn-cta:hover,
+.navigation .btn-cta:active {
+  box-shadow: 2px 2px inset, -2px -2px inset, 2px -2px inset, -2px 2px inset;
+  background: #333;
+  color: #d9eb89;
+}
+
+/***************************************/
+/* HERO SECTION */
+/***************************************/
+
+.hero {
+  background-image: url(./img/cover.jpg);
+  background-position: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cover {
+  background-color: rgba(0, 0, 0, 0.349);
+  transform: translateY(4rem);
+  width: 80%;
+  height: 25rem;
+  border-radius: 4px;
+  color: #cee567;
+  padding: 3.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: 1rem 2.4rem 3.6rem rgba(0, 0, 0, 0.175);
+}
+
+.cover h1 {
+  color: #cee567;
+  font-size: 4rem;
+}
+
+.cover h2 {
+  font-size: 3rem;
+}
+
+.cover p {
+  color: #cee567c9;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+/***************************************/
+/* HOW TO SECTION */
+/***************************************/
+
+.how {
+  margin: 9.6rem;
+}
+
+.feature {
+  margin-top: 2.4rem;
+  display: grid;
+  grid-column-gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.feature-box {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  justify-content: center;
+  border-radius: 4px;
+  justify-content: space-between;
+}
+
+.feature-box p {
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.feature-box h3 {
+  margin-bottom: 0.5rem;
+}
+
+.icons {
+  height: 2rem;
+  width: 2rem;
+  padding: 1rem;
+  color: #444;
+  border-radius: 4px;
+  background-color: #c9e265;
+  margin-bottom: 1.6rem;
+}
+
+/***************************************/
+/* CSS SECTION */
+/***************************************/
+
+.css {
+  margin: 9.6rem;
+}
+
+.css-top {
+  display: flex;
+  width: 100%;
+}
+
+.css-img {
+  position: relative;
+  background-color: #cee567;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.bac {
+  position: absolute;
+  top: 3rem;
+  right: -5rem;
+  font-size: 19.6rem;
+  font-weight: 800;
+  color: rgba(51, 51, 51, 0.082);
+}
+
+.css-text {
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.css-text h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.css-text p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.download:link,
+.download:visited {
+  width: fit-content;
+  text-decoration: none;
+  background-color: #c9e265;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.download:hover,
+.download:active {
+  color: #c9e265;
+  background-color: #333;
+}
+
+.css-bottom {
+  display: grid;
+  margin-top: 3.6rem;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 6.3rem;
+  grid-row-gap: 6.3rem;
+}
+
+.content-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.diff {
+  background-color: #c9e26549;
+}
+
+.disp {
+  display: flex;
+  gap: 1rem;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+
+.code-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.content-box h3 {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+/***************************************/
+/* JS SECTION */
+/***************************************/
