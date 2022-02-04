@@ -1,0 +1,41 @@
+/* //////////////////A FRAMEWORK MADE BY ANIMESH KUMAR////////////////// */
+
+/* ////////////////// BUTTONS ////////////////// */
+
+/* Base button settings */
+button[class*="btn"] {
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 0.5px solid #444;
+  padding: 0.5rem;
+}
+button[class*="btn"]:hover {
+  filter: brightness(1.2);
+}
+/* White button (Basic tasks) */
+.btn-wht {
+  background-color: #eee;
+  color: #444;
+}
+/* Black button (Basic tasks) */
+.btn-blk {
+  background-color: #444;
+  color: #eee;
+}
+/* Blue button (CTA/Proceed) */
+.btn-blu {
+  background-color: #70baff;
+  color: #333;
+}
+/* Red button (Warning/Cancel/Decline/Deny/Close) */
+.btn-red {
+  background-color: #dc143c;
+  color: #eee;
+}
+/* Red button (Warning/Cancel/Decline/Deny/Close) */
+.btn-grn {
+  background-color: #1db954;
+  color: #eee;
+}

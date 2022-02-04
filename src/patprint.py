@@ -37,17 +37,6 @@ def rightinv (patternchar, length):
                 print(patternchar, end="")
         print()
 
-## Right angle triangle (Inverted, Flipped)
-
-def rightinvflp (patternchar, length):
-    for x in range (1, (length+1)):
-        for y in range (1, (length+1)):
-            if(x < y):
-                print(patternchar, end="")
-            if(x >= y):
-                print(" ", end="")
-        print()
-
 ## Pyramid
 
 def pyramid (patternchar, length):
@@ -172,4 +161,6 @@ def heart (patternchar, length):
             print()
     return
 
+rightinvflp ("*", 7)
+rightinv ("*", 7)
 ## The above patterns are developed and updated by Animesh and Shiwani
